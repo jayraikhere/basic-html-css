@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+<video id="player" controls></video>
+<script>
+  var player = document.getElementById('player');
+
+  var handleSuccess = function(stream) {
+    player.srcObject = stream;
+  };
+
+  navigator.mediaDevices.getUserMedia({ audio: true, video: true })
+      .then(handleSuccess)
+</script>
+
+  <p>...After the script.</p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2ugdZ4ojCgZ4IXLGrXYJLJCZD6EmDQLNHoXk-RteO9Jt41g/viewform?embedded=true" width="640" height="2103" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<script async src="https://cse.google.com/cse.js?cx=YOUR_ENGINE_ID"></script>
+<div class="gcse-searchresults-only"></div>
+
+<div class="gcse-search"></div>
+
+</body>
+
+</html>
