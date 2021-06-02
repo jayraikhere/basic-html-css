@@ -1,41 +1,164 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym_Khana</title>
+    <style>
+        .head {
+            height: 90px;
+            box-sizing: border-box;
+            border: 2px solid red;
+            background-color: white;
+            position: fixed;
+            inline-size: 100%;
+            top: 4px;
+        }
+
+        .bid {
+
+            float: right;
+            position: sticky;
+            margin: 4px;
+            padding: 11px 24px;
+        }
+
+        header {
+            padding: 24px 0px 24px;
+            /* float: right; */
+            /* position: fixed; */
+        }
+
+        span {
+            text-align: left;
+            font-size: 36px;
+        }
+
+        #tid {
+            padding: 116px 9px 7px 34px;
+
+        }
+
+        #imgLogo {
+            height: 40px;
+            width: 40px;
+        }
+
+        #imagePara {
+            background-image: url("gym1.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 780px;
+            padding: 0px 0px 127px 0px;
+            margin: 0px -7px 0 -9px;
+        }
+        #inputText{
+            display: block;
+            /* inline-size: auto; */
+            box-sizing: border-box;
+        }
+
+        #search {
+            padding: 5px 24px;
+            font-size: 28px;
+            margin: 0px 0px 0px 37px;
+            box-sizing: border-box;
+        }
+
+        #find {
+            border: 1px solid red;
+            background-color: yellowgreen;
+            font-size: 29px;
+            padding: 6px;
+            text-decoration: none;
+            color: black;
+            margin: -5px;
+        }
+
+        #find:hover {
+            background-color: rgb(226, 111, 201);
+            color: turquoise;
+        }
+
+        #ourPasses {
+            background-color: grey;
+            margin: 13px -8px;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        #talk {
+            /* position: sticky; */
+            position: fixed;
+
+            border: 2px solid black;
+            border-radius: 40px;
+            background-color: #bcbcb1;
+            font-size: 26px;
+            margin: 2px;
+            padding: 3px 18px;
+
+            right: 4px;
+            bottom: 4px;
+
+        }
+
+        #talk:hover {
+            border-color: red;
+            background-color: rgb(113, 179, 206);
+        }
+    </style>
+</head>
 
 <body>
+    <div style="background-color: white;">
+        <header class="head">
 
-  <p>Before the script...</p>
+            <span>
+                <img src="logo_gym.jpg" alt="Not loaded" id="imgLogo">
+                HUSSLE
+            </span>
+            <!-- <button class="bid">Employee Benefit Login</button> -->
+            <button class="bid">Log in</button>
+            <button class="bid">Register</button>
+        </header>
+        <div id="imagePara">
+            <h1 id="tid">Work out your way</h1>
+            <h4 style="padding: 5px 7px 15px 36px;">Thousand of gyms. Zero contracts.</h4>
+            <div id="inputText">
 
-<video id="player" controls></video>
-  <script data-ad-client="ca-pub-2468782940601644" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2468782940601644"
-     data-ad-slot="5347164369"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<script>
-  var player = document.getElementById('player');
+                <input type="text" name="search" id="search" placeholder="Search here">
+                <a href="https://www.google.com" id="find">Find Gym</a>
+                <!-- <img src="gym1.jpg" alt="Not loaded" id="imgMain"> -->
+            </div>
 
-  var handleSuccess = function(stream) {
-    player.srcObject = stream;
-  };
+        </div>
+    </div>
+    <button id="talk">
+        Talk to us
+    </button>
 
-  navigator.mediaDevices.getUserMedia({ audio: true, video: true })
-      .then(handleSuccess)
-</script>
+    <div id="ourPasses">
+        <h2>Our Passes</h2>
+        <h2>Monthly+</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis necessitatibus esse
+            aspernatur quas explicabo sit illum minus expedita officiis molestias, sequi maiores non pariatur quaerat,
+            nostrum minima recusandae magnam neque corporis adipisci culpa? Optio amet laboriosam dolore deleniti
+            maxime!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis necessitatibus esse
+            aspernatur quas explicabo sit illum minus expedita officiis molestias, sequi maiores non pariatur quaerat,
+            nostrum minima recusandae magnam neque corporis adipisci culpa? Optio amet laboriosam dolore deleniti
+            maxime!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis necessitatibus esse
+            aspernatur quas explicabo sit illum minus expedita officiis molestias, sequi maiores non pariatur quaerat,
+            nostrum minima recusandae magnam neque corporis adipisci culpa? Optio amet laboriosam dolore deleniti
+            maxime!</p>
+    </div>
 
-  <p>...After the script.</p>
-Taj Mahal is indeed a beautiful place. When you visit, make sure you take a picture of yourself and your spouse with the mausoleum as the background...who knows, the love that the emperor had for his wife to dedicate this kind of resources for her remembrance after death might rub off on you.
 
-One of the most significant Mughal Empire architectural marvels still stands in all its beauty and finesse in Agra, Uttar Pradesh, India. The Taj Mahal is a white marble built by Mughal emperor Shah Jahan in memory of his third wife, Mumtaz Mahal. In Arabic, the Taj Mahal is known as "crown of palaces". It is said to be the jewel of Islamic art in a nation that is predominantly Hindu.
-<div class="gcse-searchresults-only"></div>
-
-<div class="gcse-search"></div>
 
 </body>
 
